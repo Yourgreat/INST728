@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>feedback</title>
+<style type="text/css">
+ fieldset {background-color: #FBEEEE;} 
+legend {width:240px;
+text-align:Center;}
+label {width: 240px;
+      display: inline-block;
+      text-align: Center;
+      }
+      
+#imp {position:relative;
+         left:245px;} 
+#sub {position:relative;
+         left:245px;}
+textarea {width: 240px;}   
+</style>
+</head>
+
+<fieldset>
+<form name="myFirstForm" method="post" action="Thankyou.html">
+
+<legend class="legend"><font color="#9B3333"> FEEDBACK </font></legend> 
+
+<div>
+	<label for="CaseID" > CaseID:</label>
+	<input type="text" > </br>
+	<label for="Subject" > Subject:*</label>
+	<input size="55" type="text" > </br>
+	<label for="Comment"> Comment:</label> 
+	<textarea name="Comment" rows="10" cols="30" ></textarea><br>
+	<label for="Importance"> Importance:</label>
+	<input type="radio" name="Importance">High 
+
+	
+</div>
+
+
+
+<div id="imp">
+	
+	
+	<input type="radio" name="Importance">Medium<br>
+	
+	<input type="radio" name="Importance">Low <br>
+</div>
+
+<br>
+<div id="sub">
+	<input type="submit" value="Submit">
+</div>
+
+</fieldset>
+
+</html>
+
