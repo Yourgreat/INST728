@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Kim Airpark Auto Repair</title>
+<style type="text/css">
+#wholepage {width:90%;
+       margin-left:auto;
+       margin-right:auto;}
+</style>
+</head>
+<fieldset style="background-color:lightblue">
+<div id="wholepage">
+<form name="myFirstForm" method="post" action="thankyou.html">
+<legend class="legend"><h3>Customer Profile</h3></legend> </br>
+
+<div id="name">
+	<label for="FirstName" > FirstName*</label>
+	<input type="text" placeholder="FirstName"> 
+	<label for="LastName"> LastName*</label>
+	<input type="text" placeholder="LastName">
+</div>
+<br>
+<div id="date">
+	<label for="DateOfBirth"> DateOfBirth</label><br>
+	<input type="date" value="" placeholder="mm/dd/yyyy">
+</div>
+<br>
+
+<div id="sex">
+	<label for="Gender"> Gender</label><br>
+	<input type="radio" name="Gender">Male
+	<input type="radio" name="Gender">Female
+	<input type="radio" name="Gender">Other
+</div>
+<br>
+<div>
+	<label for="Address"> Address*</label><br>
+	<input size="40" type="text" placeholder="StreetAddress"> </br>
+	<input size="40" type="text" placeholder="AddressLine2"> </br>
+	<input type="text" placeholder="City"> </br>
+	<select class="SelectOptions">
+	<option value="State">SelectState</option>
+	<option value="State">Maryland</option>
+	<option value="State">Virginia</option>
+	<option value="State">Washington DC</option>
+	</select>
+
+	<input type="text" placeholder="ZipCode"> 
+	
+</div>
+<br>
+<div>
+	<label for="PhoneNumber"> PhoneNumber*</label> <br>
+	<input type="tel" placeholder="Work Phone"> 
+	<input type="tel" placeholder="Home Phone"> 
+</div>
+
+
+<div>
+	<label for="Email"> Email*</label> <br>
+	<input size="30" type="email" placeholder="Your Email address"><br>
+	<label for="Comment"> Comment</label> <br>
+	<textarea name="Comment" rows="6" cols="50" ></textarea><br>
+</div>
+<br>
+<div>
+	<input type="submit" value="Submit">
+</div>
+</div>
+</fieldset>
+</html>
+
