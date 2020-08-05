@@ -1,57 +1,85 @@
 <html>
 <head>
-<title>feedback</title>
-<style type="text/css">
- fieldset {background-color: #FBEEEE;} 
-legend {width:240px;
-text-align:Center;}
-label {width: 240px;
-      display: inline-block;
-      text-align: Center;
-      }
-      
-#imp {position:relative;
-         left:245px;} 
-#sub {position:relative;
-         left:245px;}
-textarea {width: 240px;}   
+<title>Feedback</title>
+<meta http-equiv="Content-Type" content="text/html;"/>
+<style>
+body {width: 100%;
+     background: linear-gradient(to bottom, #ff9999 0%, #800000 100%);
+     margin: 0px 100px 0px 190px;
+    
+}
+
+fieldset {background-color:#e6e4da ; 
+        float:right;   
+        margin-right: 25px;
+        margin-left:50px;  
+        padding:10px 30px ; 
+}
+
+footer{padding: 4px;
+}     
 </style>
 </head>
-
-<fieldset>
-<form name="myFirstForm" method="post" action="Thankyou.html">
-
-<legend class="legend"><font color="#9B3333"> FEEDBACK </font></legend> 
-
-<div>
-	<label for="CaseID" > CaseID:</label>
-	<input type="text" > </br>
-	<label for="Subject" > Subject:*</label>
-	<input size="55" type="text" > </br>
-	<label for="Comment"> Comment:</label> 
-	<textarea name="Comment" rows="10" cols="30" ></textarea><br>
-	<label for="Importance"> Importance:</label>
-	<input type="radio" name="Importance">High 
-
-	
-</div>
-
-
-
-<div id="imp">
-	
-	
-	<input type="radio" name="Importance">Medium<br>
-	
-	<input type="radio" name="Importance">Low <br>
-</div>
-
-<br>
-<div id="sub">
-	<input type="submit" value="Submit">
-</div>
-
-</fieldset>
-
+<body >
+  <form name="form1" method="post" action="thankyou.html">
+     <table width="70%"  cellspadding="1" cellspacing="0">
+        
+          <tr>
+               <td bgcolor="white" height="40"><img src="images/umdlogo.png" width="150" height="25" ></td>
+          </tr>  
+         		   
+		<tr>
+		      <td bgcolor="#7d0101"> 
+		         		                 
+        <font color="white" > &#8865; &nbsp;&nbsp;</font> <font color="yellow" size="2"> <u> Feedback </u></font>
+		    
+		<fieldset>
+		<table width="60%" cellpadding="0" cellspacing="0">
+    <p><font size="2">Please complete following forms</font></p>
+           
+             <tr >
+		        <td bgcolor="#FBEEEE" width="350" height="25"><strong><font color="#9B3333" size="1">FEEDBACK</font></strong></td>
+		         <td>&nbsp;</td>
+		     </tr>
+		   
+		     <tr>
+		        <td>
+		          <table bgcolor="#FBEEEE" width="70%" align="center" cellspadding="0" cellspacing="0" >
+		            <tr>
+		                <td valign="top"><strong><font size="1">CaseID:</font></strong></td>
+		                <td><input name="case_ID" type="text"  value="34564" size="15" readonly></td>
+		            </tr>
+		             <tr>
+		                <td valign="top"><strong><font size="1">Subject:</font><font color="#FF0000">*</font></strong></td>
+		                <td><input name="subject" type="text" size="65" maxlength="35"></td>
+		            </tr>
+		             <tr>
+		                <td valign="top"><strong><font size="1">Comment:</font><font color="FF0000">*</font></strong></td>
+		                <td><textarea name="comment" cols="30" rows="10" id="comment"></textarea></td>
+		            </tr>
+		           
+                    <tr>
+                        <td valign=“top">&nbsp;</td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>    
+		          </table>
+		         
+		        </td>
+		      </tr>
+	    
+		  </table>
+		  </fieldset>  
+		
+		        <tr>
+		          <td bgcolor="#FBEEEE" ><footer ><center><font size="1">Copyright &copy; UMD. All Right Reserved</font></center></footer></td>
+		        </tr>  
+		        
+		
+	  
+	  </td>
+	  </tr>	      
+	    
+     </table>
+   </form>
+</body>
 </html>
-
