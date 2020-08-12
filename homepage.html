@@ -9,67 +9,127 @@ body {background-image: url('image/bgphoto.jpg') ;
      margin:50px, 0px;
      font-family:sans-serif;
 }  
-.header-container{
-                  opacity:0.7;
-                  width:70%;
-                  height:18%;  
-                  display:inline-block;             
-}
-header{margin-left:20px;
-       font-weight:bold;
-}
-nav{background-color:black;
-	width:100%;
-	opacity:0.7;
-		
-}
-nav ul{
-		list-style-type:none;
-		display:inline-block;
-		padding-right:500px;
-		margin:0;
-}
-			
-nav li{float:right;
-}
 
-		
-nav a{
-	  display : block;
-	  text-decoration : none;
-		color : white;
-		text-align : center;
-		padding : 10px; 
+<style type="text/css">
+*{
+   margin:0;
+   padding:0;
+   list-style:none;
+   text-decoration:none;   
+  }
+.header{
+   width:100%;
+   height:80px;
+   display:block;
+   background-color:#101010;
+} 
+.inner_header{
+   width:1100px;
+   height:100%;
+   display:block;
+   margin:0 auto;
 }
-nav a:hover {
-		  background-color: green;
+.logo_container{
+   height:100%;
+   display:table;
+   float:left; 
+}
+.logo_container h1{
+   color:white;
+   height:100%;
+   display:table-cell;
+   vertical-align: middle;
+   font-family:Arial;
+   font-size:28px;  
+}
+.nav{
+   float:right;
+   height:100%;
+} 
+.nav a{
+   height:80%;
+   display:table;
+   float:left;
+   padding:0px 20px
+}
+.nav a:last-child{
+   padding-right:0px;
+}
+.nav a li{
+   display:table-cell;
+   vertical-align: middle;
+   height:100%;
+   color:white;
+   font-family: Arial;
+   font-size:16px;
+}
+.nav a:hover { 
+		  background-color:blue;
+		  
+}
+.box{position: relative;
+     max-width:150px;
+     padding:20px;
+     box-shadow: 0 5px 15px rgba(0,0,0,.5);
+     overflow: hidden;
+     color:#000;
+     margin-top:90px;
+    
+}
+.box:before{
+     content:'';
+     position:absolute;
+     top:-20px;
+     left:-20px;
+     right: 20px;
+     bottom:20px;
+     filter:blur(4px);
+}
+.box h3{
+     position: relative;
+     margin:0 0 20px;
+     padding:0;
+     font-size: 20px;
+     text-transform: uppercase;
+     z-index: 2;
+}
+.box h4{
+     position: relative;
+     margin:0 ;
+     padding:0;
+     font-size: 20px;
+     z-index: 2;
 }
 </style>
 </head>
-<body >
-  <div class="container">
-    <div class="header-container">
-       <header>
-    <hl><font color="black" size="8"><strong>Kim Airpark Auto Repair</strong></font></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <img src="image/mechanic.png" width="120" height="80">
-     </header>
-         </div>
-       <nav>       
-         <ul>
-           <li><a href="Customerprofile.html"><h4>Customer Profile</h4></a></li>
-           <li> <a href="Services.html"><h4>Services</h4></a></li>
-           <li><a href="#"><h4>About Us</h4></a></li>
-           <li><a href="#"><h4>FAQ Pages</h4></a></li>
-         </ul>  
-       </nav>
-       <div class"main-container">
-    <p><font size="4" color="purple">Complete auto and light truck repair. <br> Fast in-house services. <br> 
-    Certified fully trained auto mechanics.<br> All major credit cards accepted.<br>
-      Maintenance record maintained and reminders scheduled. </font></p>
 
-    </div>
+
+</style>
+</head>
+<body >
+  <div class="header">
+    <div class="inner_header">
+       <div class="logo_container">
+    <h1>KIM AIRPARK AUTO REPAIR</h1>
+       </div> 
+         
+         <ul class="nav">
+           <a href="Customerprofile.html"><li>CUSTOMER PROFILE</li></a>
+            <a href="Services.html"><li>SERVICES</li></a>
+           <a href="aboutus.html"><li>ABOUT US</li></a>
+           <a href="faqpages.html"><li>FAQ PAGES</li></a>
+         </ul>  
+
+       </div>
+   </div>
+          
+       <div class="box">
+        <h3 font color="black">Make an Appointment </h3>
+        <img src="image/phone.png" width="80" height="50">
+         <h4>301-740-9440</h4>
+       </div>
  
-    
-  </div>
+   
+  
 </body>
 </html>

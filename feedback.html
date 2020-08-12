@@ -1,85 +1,167 @@
-<html>
+<html >
 <head>
-<title>Feedback</title>
-<meta http-equiv="Content-Type" content="text/html;"/>
-<style>
-body {width: 100%;
-     background: linear-gradient(to bottom, #ff9999 0%, #800000 100%);
-     margin: 0px 100px 0px 190px;
-    
-}
-
-fieldset {background-color:#e6e4da ; 
-        float:right;   
-        margin-right: 25px;
-        margin-left:50px;  
-        padding:10px 30px ; 
-}
-
-footer{padding: 4px;
-}     
-</style>
-</head>
-<body >
-  <form name="form1" method="post" action="thankyou.html">
-     <table width="70%"  cellspadding="1" cellspacing="0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style type="text/css">
+       
         
-          <tr>
-               <td bgcolor="white" height="40"><img src="images/umdlogo.png" width="150" height="25" ></td>
-          </tr>  
-         		   
-		<tr>
-		      <td bgcolor="#7d0101"> 
-		         		                 
-        <font color="white" > &#8865; &nbsp;&nbsp;</font> <font color="yellow" size="2"> <u> Feedback </u></font>
-		    
-		<fieldset>
-		<table width="60%" cellpadding="0" cellspacing="0">
-    <p><font size="2">Please complete following forms</font></p>
+        .header-container{
+            background-color: white;
+            color: white;
+            height: auto;
+            border: 2px solid maroon;
+            
+        }
+        .footer-container{
+			clear : both;
+			background-color : #FBEEEE;
+			padding : 10px;
+            text-align: center;
+            color: black;
+            border: 2px solid maroon;
+        }
+        
+        a{
+            color: goldenrod;
+        }
+        
+        ul li{
+            list-style-type:square;
+            color: white;
+        }
+        
+        .column{
+            float: left;
+            width:30%;
+            padding: 15px;
+        }
+        .column_form{
+            float: left;
+            width:60%;
+            padding: 30px;
+            background-color: beige;
+        }
+        body{
+            background-color: firebrick;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 500px;
+        }
+        
+        .main-container{
+            width: 100%;
+            margin: auto;
+            background-color: maroon;    
+        }   
+    </style>
+    <script type="text/javascript">
+    
+     function validate() {
+      
+         if( document.myForm.CaseID.value == "" ) {
+            alert( "Please provide your CaseID!" );
+            document.myForm.CaseID.focus() ;
+            return false;
+         }
+         if( document.myForm.Subject.value == "" ) {
+            alert( "Please provide your Subject!" );
+            document.myForm.Subject.focus() ;
+            return false;
+         }
+         
+        return (true);
+     }
+     
+    </script>
+</head>
+ 
+<body>
+<div class="main-container">
+
+
+    <div class="header-container">
+    <header>
+        <img src="https://www.umd.edu/sites/umd.edu/files/UMD_Logo-white.png", height="100" width="200">
+    </header>
+    </div> 
+    <div class="column">
+        <ul>
+            <li> <a href="#"> Payroll Information</a></li>
+            <li> <a href="#"> Performance Appraisal</a></li>
+            <li> <a href="#"> TimeSheet</a></li>
+            <li> <a href="#"> Leave Management</a></li>
+            <li> <a href="#"> Health Benefits</a></li>
+            <li> <a href="#"> Organization Chart</a></li>
+            <li> <a href="#"> Access Management</a></li>
+            <li> <a href="#"> Career Development</a></li>
+            <li> <a href="#"> My Profile</a></li>
+            <li> <a href="#"> Expense Reimbursement</a></li>
+            <li> <a href="#"> Retirement Planning</a></li>
+            <li> <a href="#"> Ticket management</a></li>
+            <li> <a href="#"> Documents</a></li>
+            <li> <a href="#"> Feedback</a></li>
+        </ul>
+    </div>
+    
+    <div class="column_form">
+    
+        Please complete the following form </br>
+        <table width="100%" align="center" cellpadding="1" cellspacing="0" bgcolor="#FBEEEE"> 
            
-             <tr >
-		        <td bgcolor="#FBEEEE" width="350" height="25"><strong><font color="#9B3333" size="1">FEEDBACK</font></strong></td>
-		         <td>&nbsp;</td>
-		     </tr>
-		   
-		     <tr>
-		        <td>
-		          <table bgcolor="#FBEEEE" width="70%" align="center" cellspadding="0" cellspacing="0" >
-		            <tr>
-		                <td valign="top"><strong><font size="1">CaseID:</font></strong></td>
-		                <td><input name="case_ID" type="text"  value="34564" size="15" readonly></td>
-		            </tr>
-		             <tr>
-		                <td valign="top"><strong><font size="1">Subject:</font><font color="#FF0000">*</font></strong></td>
-		                <td><input name="subject" type="text" size="65" maxlength="35"></td>
-		            </tr>
-		             <tr>
-		                <td valign="top"><strong><font size="1">Comment:</font><font color="FF0000">*</font></strong></td>
-		                <td><textarea name="comment" cols="30" rows="10" id="comment"></textarea></td>
-		            </tr>
-		           
-                    <tr>
-                        <td valign=“top">&nbsp;</td>
-                        <td><input type="submit" value="Submit"></td>
-                    </tr>    
-		          </table>
-		         
-		        </td>
-		      </tr>
-	    
-		  </table>
-		  </fieldset>  
-		
-		        <tr>
-		          <td bgcolor="#FBEEEE" ><footer ><center><font size="1">Copyright &copy; UMD. All Right Reserved</font></center></footer></td>
-		        </tr>  
-		        
-		
-	  
-	  </td>
-	  </tr>	      
-	    
-     </table>
-   </form>
+          
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr> 
+                    <td><pre>                </pre></td>
+                    <td> 
+                        <div><strong><font color="#9B3333">FEEDBACK</font></strong></div> 
+                    </td>
+                </tr> 
+                <tr>
+                    <td></td>
+                </tr>
+                  
+                <form action = "thankyou.html" name = "myForm" onsubmit = "return(validate());">
+                <tr>
+               
+                    <td> </td>
+                    <td><label for="CaseID">CaseID:</label></td>
+                    <td><input type = "text" name = "CaseID"/></td>
+               
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label for="Subject">Subject:<font color="#FF0000">*</font></label> 
+                    </td>
+                    <td><input type= "text" name= "Subject" size="60" />
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td valign="top"><label for="Comment">Comment:<font color="#FF0000">*</font></label></td>
+                    <td><textarea rows = "10" cols = "30" name = "Comment" > </textarea></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><label for="submit"></label> </td>
+                    <td><input type= "submit" value= "Submit"> </td></tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+             
+        </table>
+        </form>
+    </div>
+    
+    <div class="footer-container">
+        <footer> <div>Copyright &copy; UMD. All rights reserved  </div>
+        </footer>
+    </div>
+
+</div>
+
 </body>
 </html>
