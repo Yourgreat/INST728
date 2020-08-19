@@ -1,10 +1,8 @@
 <html>
-
-<head>
-<title>Services</title>
-
+<head><title>About Us</title>
+<meta http-equiv="Content-Type" content="text/html;"/>
 <style type="text/css">
-body{background-color:#b8c6d1;}
+body{background-color: #b8c6d1;}
 *{
    margin:0;
    padding:0;
@@ -44,7 +42,7 @@ nav li {
    height:100%;
    display:table;
    float:left;
-   padding:0px  15px;
+   padding:0px 15px;
 }
 nav li a{
    display:table-cell;
@@ -60,46 +58,54 @@ nav li a:hover {
 
 nav ul ul{position:absolute;
          display:none;
-        margin-top:70px;
-       
+        margin-top:70px;  
          height:50px;
          }
 nav li:hover ul{
      display:block;
      background-color:#a36d2f;
      float:left;}         
-.container{opacity:0.5;}
-.container:hover{opacity:1.0;}   
-img{position:absolute;
-    left: 5px;
-  top: 90px;
-  z-index: -1;  
+.main_container{font-family: Arial;
+                color:#2d5986;
+                }
+.box{width:100%;
+     left:12%;
+     position:absolute;
+}
+.row{margin-top:300px;
+    height:225px;
+    color:#2d5986;
+width:99.5%;
+border-style:groove;
+border-color: yellow;
+border-radius: 10px;
+font-family: Arial;
+background-color:# #b8c6d1;
 }  
-                  
-.main_container{ font-family: Arial;
-                color:#2d5986;                            
-}
-.services{margin-left: 600px;
-          color:#2d5986;
-          font-family: Arial;
-          font-size: 18px;           
-}
-.services ul li{list-style-type:square;}
+.member1{float:left;
+     width:30%;
+padding:8px;
 
-.hours {position:absolute;
-    right: 70px;
-  top: 150px;
-  z-index: -1;
-  }
-table,th{padding:15px;
-         }
+}
+.member2{float:left;
+     width:30%;
+padding:8px;
 
-table,td {
-	border : 2px solid #2d5986;
-	padding : 12px;
-	text-align: left;
-	color:#2d5986;
-	}
+}
+.member3{float:left;
+     width:18%;
+padding:8px;
+
+}
+.member4{float:left;
+     width:22%;
+padding:8px;
+}
+.row:after{
+content:"";
+display:table;
+clear:both;
+}
 
 .footer{
    width:100%;
@@ -107,9 +113,9 @@ table,td {
    display:block;
    background-color:#2d5986;
    position:fixed;
-   bottom:0;
-   
+   bottom:0;   
 } 
+
 .footer_container {
    color:white;
     text-align: center;
@@ -122,19 +128,23 @@ table,td {
            background-color: #b043ae;}
 #signature{text-align: right;
            font-size:11px;
-           color:#b8dce0;}
+           color:#b8dce0;
+}
+
 </style>
 </head>
+
+
 <body>
-  <div class="header">
+<div class="header">
     <div class="inner_header">
        <div class="logo_container">
     <h1>KIM AIRPARK AUTO REPAIR</h1>
-       </div>        
+       </div>  
           <nav>
          <ul>
-             <li><a href="homepage.html">HOME</a></li>
-             <li> <a href="Services.html">SERVICES</a>
+              <li><a href="homepage.html">HOME</a></li>
+              <li> <a href="Services.html">SERVICES</a>
               <ul>
               <li> <a href="customerreviews.html">CUSTOMER REVIEWS</a></li>
               </ul>
@@ -146,81 +156,50 @@ table,td {
          </ul>  
       </nav>
        </div>
+</div>
+<div class="main_container">
+<center> <h1 font-family="Arial" >Meet Our Team</hl></center>
+<div class="box">
+<img src="image/statecert.jpg" width="300" height="250">
+<img src="image/mechanics.jpg" width="350" height="300"> 
+<img src="image/statecert2.jpg" width="300" height="250">
+</div>
+</div>
+
+<div class="row">
+  <div class="member1">
+  <h4>Chunung Kim (Owner)</h4><br>
+<img src="image/master.jpg" width="155" height="100">
+<img src="image/master2.jpg" width="155" height="100"><br>
+Mr. Kim is a master mechanic <br> with 44 years of automotive repairs <br> and maintenance experience.
+
    </div>
-<div class="container">
-<img src="image/garage.jpg" width="500" height="600">
-<div class="main_container" >
-<br>
-<h2 font color="green"><center> SERVICES </center></h2> <br>
-<div class="services">
-
-<ul>
-    <li>Oil Changes</li> <br>
-    <li>Brake Repair</li><br>
-    <li>Engine Performance</li><br>
-     <li>Engine Repair</li><br>
-      <li>Cooling system</li><br>
-     <li>Power Steering flush/Repair</li><br>
-      <li>Transmission Repair</li><br>
-    <li>Heating & A/C Repair</li><br>
-    <li>Tire Repair</li><br>
-    <li>Tire Balance and Rotation </li><br>
-    <li>Wheel Alignment</li><br>
-     <li>Shocks & Strut Replacement</li>
-</ul>
+   <div class="member2">
+<h4>Thomas Kim </h4><br>
+<img src="image/Thomas.jpg" width="155" height="100">
+<img src="image/Thomas2.jpg" width="155" height="100"><br>
+Thomas is certified automotive technician <br> and mechanic. He has 12 years of <br> experience in the auto repair business. 
 </div>
-<div class="hours">
-<table>
-<tr>
-<th>Business Hours</th>
-</tr>
-<tr>
-<td>Monday</td>
-<td>8am - 6pm</td>
-</tr>
-<tr>
-<td>Tuesday</td>
-<td>8am - 6pm</td>
-</tr>
-<tr>
-<td>Wednesday</td>
-<td>8am - 6pm</td>
-</tr>
-<tr>
-<td>Thursday</td>
-<td>8am - 6pm</td>
-</tr>
-<tr>
-<td>Friday</td>
-<td>8am - 6pm</td>
-</tr>
-<tr>
-<td>Saturday</td>
-<td>9am - 3pm</td>
-</tr>
-
-<tr>
-<td>Sunday</td>
-<td>Closed</td>
-</tr>
-
-</table>
+<div class="member3">
+<h4>Miguel </h4><br>
+Miguel has 25 years <br>experience as <br>an automobil mechanic.
 
 </div>
+<div class="member4"></div>
+<h4>Mrs. Kim (Moonie) </h4><br>
+Mrs. Kim has always been responsible for the office administration and accounting.
 </div>
 </div>
-
  <div class="footer">
      <div class="footer_container">
  <a href=https://www.mapquest.com/us/maryland/kim-airpark-auto-repair-372812388> 
     7605 Airpark Rd. <br>
-    Gaithersburg, MD 20879 </a><br>
+    Gaithersburg, MD 20879</a> <br>
     Tel: 301-740-9440
    <div id="signature">
    Created by Juli Han
    </div>
 </div> 
-  </div>
-
+  
 </body>
 </html>

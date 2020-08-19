@@ -1,15 +1,7 @@
 <html>
-<head><title>Homepage</title>
+<head><title>FAQ</title>
 <meta http-equiv="Content-Type" content="text/html;"/>
-
-<style>
-
-body {background-image: url('image/bgphoto.jpg') ;
-     background-repeat: no-repeat;
-     background-size:cover;
-     margin:50px, 0px;        
-}  
-
+<style type="text/css">
 *{
    margin:0;
    padding:0;
@@ -49,7 +41,7 @@ nav li {
    height:100%;
    display:table;
    float:left;
-   padding:0px 15px;
+   padding:0px  15px;
 }
 nav li a{
    display:table-cell;
@@ -73,41 +65,20 @@ nav li:hover ul{
      display:block;
      background-color:#a36d2f;
      float:left;}         
-.box{position: relative;
-     max-width:150px;
-     padding:20px;
-     box-shadow: 0 5px 15px rgba(0,0,0,.5);
-     overflow: hidden;
-     color:#000;
-     margin-top:90px;
-     margin-left:20px;
-     font-family:Arial;
-}
-.box:before{
-     content:'';
-     position:absolute;
-     top:-20px;
-     left:-20px;
-     right: 20px;
-     bottom:20px;
-     filter:blur(4px);
-}
-.box h3{
-     position: relative;
-     margin:0 0 20px;
-     padding:0;
-     font-size: 20px;
-     text-transform: uppercase;
-     z-index: 2;
-}
-.box h4{
-     position: relative;
-     margin:0 ;
-     padding:0;
-     font-size: 20px;
-     z-index: 2;
+.container{font-family: Arial;
+           color:#2d5986;
+           margin-left:100px;
+           overflow:auto;
+           font-size: 18px;
 }
 
+ p::before{
+          content: url('image/mechanic.png');
+          float:right;
+          
+        
+            }
+    
 .footer{
    width:100%;
    height:85px;
@@ -115,6 +86,7 @@ nav li:hover ul{
    background-color:#2d5986;
    position:fixed;
    bottom:0;
+   
 } 
 
 .footer_container {
@@ -128,21 +100,26 @@ nav li:hover ul{
 .footer_container a:hover{
            background-color: #b043ae;}
 #signature{text-align: right;
-           font-size:12px;
-           color:#b8dce0;}
+           font-size:11px;
+           color:#b8dce0;
+
+}
+
 </style>
 </head>
-<body >
 
-  <div class="header">
+
+<body>
+<div class="header">
     <div class="inner_header">
        <div class="logo_container">
     <h1>KIM AIRPARK AUTO REPAIR</h1>
        </div> 
+         
           <nav>
          <ul>
              <li><a href="homepage.html">HOME</a></li>
-             <li> <a href="Services.html">SERVICES</a>
+              <li> <a href="Services.html">SERVICES</a>
               <ul>
               <li> <a href="customerreviews.html">CUSTOMER REVIEWS</a></li>
               </ul>
@@ -155,29 +132,48 @@ nav li:hover ul{
       </nav>
 
        </div>
-   </div>
-          
-       <div class="box">
-        <h3 font color="black">Make an Appointment </h3>
-        <img src="image/phone.png" width="80" height="45">
-         <h4>301-740-9440</h4>
-       </div>
-       
-   <div class="footer">
+</div>
+<div class="container">
+<h2><center> Frequently Asked Questions</center></h2><br><br>
+<ul>
+<li>Q: Can I get an estimate without bringing my vehicle to the shop?<br><br>
+   <p> A: You will need to visit an Auto Repair Location to obtain an estimate.<br><br></p>
+</li>
+<li>Q: Do you offer rental cars?<br><br>
+    A: No, we do not offer rental cars, but We provide transportation service.<br><br>
+</li>
+<li>Q: Do you service brakes?<br><br>
+    A: Yes, our shop offer brake services. <br><br>
+   
+   <li>Q: How can I obtain a copy of my Auto Repair service records?<br><br>
+  A: To receive a copy of your Auto Repair service records, <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;fill out the Customer Relations Form and select service history as your topic. <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Your service records will be located and sent to you with one week.<br><br><br>
+</li>
+
+<li>Q: What type of vehicles do you service?<br><br>
+    A: We service most makes and models. 
+</ul>
+
+
+</div>
+
+
+ <div class="footer">
      <div class="footer_container">
 
-    <a href=https://www.mapquest.com/us/maryland/kim-airpark-auto-repair-372812388> 7605 Airpark Rd. <br>
-    Gaithersburg, MD 20879</a> <br>
+     <a href=https://www.mapquest.com/us/maryland/kim-airpark-auto-repair-372812388>  
+         7605 Airpark Rd. <br>
+    Gaithersburg, MD 20879 </a>  <br>
     Tel: 301-740-9440
    <div id="signature">
    Created by Juli Han
    </div>
 </div> 
-   
-
-  </div>    
-       
- 
-
+  </div>
 </body>
+
+
+
+
 </html>
